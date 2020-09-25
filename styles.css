@@ -1,0 +1,166 @@
+html {
+  background-color: #efefef;
+  font: normal 14px / 20px 'Roboto', sans-serif;
+  padding: 0 0 25px;
+  transition: background-color 0.5s ease;
+}
+
+html.dark {
+  background-color: #121212;
+  color: #efefef;
+  transition: background-color 0.5s ease;
+}
+
+th {
+  background-color: #efefef;
+  position: sticky;
+  top: 0;
+  transition: background-color 0.5s ease;
+}
+
+th.dark {
+  background-color: #121212;
+  transition: background-color 0.5s ease;
+}
+
+.header {
+  background-color: #efefef;
+  box-shadow: 0 3px 2px -2px #323232;
+  color: #121212;
+  font-size: 32px;
+  font-weight: bold;
+  height: 16px;
+  left: 0;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: background-color 0.5s ease;
+}
+
+.header.dark {
+  background-color: #121212;
+  box-shadow: 0 3px 2px -2px #ababab;
+  color: #efefef;
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  display: grid;
+  height: calc(100vh - 48px - 32px - 20px);
+  margin-top: 52px;
+  overflow: auto;
+  text-align: center;
+  width: calc(100vw - 16px);
+}
+
+.fab {
+  background-color: #efefef;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 45px;
+  margin: 4px 2px 4px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover {
+  background-color: #cdcdcd;
+}
+
+.fab.dark {
+  background-color: #121212;
+  border: 1px solid #fff;
+  color: #efefef;
+}
+
+.fab.dark:hover {
+  background-color: #343434;
+}
+
+.footer {
+  background-color: #121212;
+  bottom: 0;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 24px;
+  left: 0;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.footer.dark {
+  background-color: #010101;
+}
+
+.footer .theme-switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 30px;
+}
+
+.footer .theme-switch input {
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.footer #themeSwitchLabel {
+  margin-left: 4px;
+}
+
+.footer .version {
+  margin-right: 4px;
+  position: absolute;
+  right: 0px;
+}
+
+/* The slider */
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 13px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 13px;
+  -webkit-transition: .4s;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(9px);
+  -ms-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
